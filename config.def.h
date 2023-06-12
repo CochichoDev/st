@@ -96,46 +96,50 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.9, alphaUnfocused = 0.8;
 
+#include "/home/cochicho/.cache/wal/colors-wal-st.h"
+
+unsigned int bg = 0, bgUnfocused = 0;
+
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
-
-	/* Specific background color palette */
-	"#f9e8fb", 
-	"#debdf3", 
-	"#c088f7", 
-	"#7083ea", 
-	"#8e77ec", 
-	"#02225f", 
-	"#0c103d", 
-	"#07051b",
-};
+//static const char *colorname[] = {
+//	/* 8 normal colors */
+//	"black",
+//	"red3",
+//	"green3",
+//	"yellow3",
+//	"blue2",
+//	"magenta3",
+//	"cyan3",
+//	"gray90",
+//
+//	/* 8 bright colors */
+//	"gray50",
+//	"red",
+//	"green",
+//	"yellow",
+//	"#5c5cff",
+//	"magenta",
+//	"cyan",
+//	"white",
+//
+//	[255] = 0,
+//
+//	/* more colors can be added after 255 to use with DefaultXX */
+//	"#cccccc",
+//	"#555555",
+//	"gray90", /* default foreground colour */
+//	"black", /* default background colour */
+//
+//	/* Specific background color palette */
+//	"#f9e8fb", 
+//	"#debdf3", 
+//	"#c088f7", 
+//	"#7083ea", 
+//	"#8e77ec", 
+//	"#02225f", 
+//	"#0c103d", 
+//	"#07051b",
+//};
 
 
 /*
@@ -149,13 +153,13 @@ static const char *colorname[] = {
 	static unsigned int defaultrcs = 257;
 	unsigned int bg = 16, bgUnfocused = 16;
 */
-
+/*
 unsigned int defaultfg = 260;
 unsigned int defaultbg = 267;
 unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 unsigned int bg = 267, bgUnfocused = 267;
-
+*/
 /*
  * Default shape of cursor
  * 2: Block ("█")
