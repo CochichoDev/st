@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = {"ttf-jetbrains-mono-nerd:pixelsize=14:antialias=true:autohint=true"};
-static int borderpx = 2;
+static char *font = "Hack:pixelsize=17:antialias=true:autohint=true";
+static char *font2[] = {"ttf-jetbrains-mono-nerd:pixelsize=17:antialias=true:autohint=true"};
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -95,11 +95,11 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.9, alphaUnfocused = 0.8;
+float alpha = 0.95, alphaUnfocused = 0.85;
 
 #include "/home/cochicho/.cache/wal/colors-wal-st.h"
+unsigned int bg = 256, bgUnfocused = 256;
 
-unsigned int bg = 0, bgUnfocused = 0;
 
 /* Terminal colors (16 first used in escape sequence) */
 //static const char *colorname[] = {
