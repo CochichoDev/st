@@ -4,3 +4,4 @@ Added patches:
 - alpha focus hightlight
 - scrollback_ring_buffer
 - anysize
+- autocomplete
