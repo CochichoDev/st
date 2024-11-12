@@ -5,3 +5,5 @@ Added patches:
 - scrollback_ring_buffer
 - anysize
 - autocomplete
+- desktopentry
+- netwmicon
